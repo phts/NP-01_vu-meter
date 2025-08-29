@@ -2,7 +2,7 @@
 
 This is a modification of [PeppyMeter] plugin which is used by [PHTS NP-01].
 
-Currently not used as a standalone plugin due to compatibility issues with `FusionDsp` and `Spotify` plugins. Used as an internal repo fetched by [my fork of `Peppy-meter-Basic` plugin](https://github.com/phts/NP-01_plugins/tree/master/peppymeterbasic).
+Used as an internal repo fetched by [my fork of `Peppy-meter-Basic` plugin](https://github.com/phts/NP-01_plugins/tree/master/peppymeterbasic).
 
 Tweaks made to [the original repo][PeppyMeter]:
 
@@ -14,6 +14,34 @@ Tweaks made to [the original repo][PeppyMeter]:
 - [...and more][commits]
 
 <img src="./docs/demo.jpg" width="300">
+
+---
+
+<details>
+<summary>As <code>PeppyMeter Screensaver</code> plugin (deprecated)</summary>
+
+:warning: Currently it is not used as `PeppyMeter Screensaver` plugin due to compatibility issues with `FusionDsp` and `Spotify` plugins.
+
+#### Install
+
+1. Install plugin [PeppyMeter Screensaver](https://community.volumio.com/t/project-with-peppymeter-peppyspectrum-screensaver-plugin-for-volumio/45862)
+2. Change git repo remote url to this fork:
+
+   ```sh
+   ssh <volumio host>
+   cd /data/plugins/miscellanea/peppy_screensaver/peppymeter/
+   git remote set-url origin https://github.com/phts/NP-01_vu-meter.git
+   ```
+
+3. Deploy:
+
+   ```sh
+   bash scripts/deploy.sh
+   ```
+
+4. Restart
+
+</details>
 
 [peppymeter]: https://github.com/project-owner/PeppyMeter
 [phts np-01]: https://tsaryk.com/NP-01
